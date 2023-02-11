@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active{
+    border-bottom: 2px solid #ffffff;
+}
+header{
+    padding: 12px 100px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+}
+header h1{
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -99999999px;
+}
+header h1 a{
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+header nav{
+    margin-left: 168px;
+}
+header ul{
+    width: 270px;
+}
+header ul a{
+    color:#ffffff;
+    padding: 5px 10px;
+    position: relative;
+}
+header ul a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+}
+header ul a:hover::before{
+    width: 100%;
+}
+main{
+    padding: 50px 110px;
+}
+.socialcontainer{
+    width: 50px;
+    height: 100px;
+    position: fixed;
+    right: 0;
+    top: 118px;
+}
+.socialcontainer div{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.socialcontainer div a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.socialcontainer .facebook{
+    background-image: url(../img/fbblack.png);
+}
+
+.socialcontainer .instagram{
+    background-image: url(../img/instblack.png);
+}
+
+.socialcontainer .facebook:hover{
+    background-image: url(../img/fboriginal.png);
+}
+.socialcontainer .instagram:hover{
+    background-image: url(../img/instoriginal.png);
+}
+
+.mainheading{
+    font-size: 24px;
+}
+.second{
+    margin-top: 22px;
+}
+.articlecontainer{
+    width: 1176px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.secondarticle .musicarticle{
+    margin-bottom: 50px;
+}
+.musicarticle{
+    width: 300px;
+    position: relative;
+}
+.like{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/likeblack.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.musicarticle:hover .like{
+    background-image: url(../img/likeorange.png);
+}
+.musicarticle:hover section{
+    box-shadow: 0px 0px 10px #000000;
+}
+.musicarticle:hover .musicarticlelink>a{
+    text-decoration: underline;
+}
+.musicarticle section{
+    width: 100%;
+    height: 244px;
+    border: 1px solid #000000;
+    background-image: url(../img/sound.png);
+    background-repeat: repeat-x;
+    background-size: 25%;
+    background-position-y: 58px;
+    padding: 144px 12px 0px 12px;
+}
+.musicarticle h3{
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+.musicarticle p{
+    font-size: 14px;
+}
+.musicarticle .musicarticlelink a{
+    font-size: 12px;
+    color: #000000;
+    margin-top: 10px;
+}
+.playlistcontainer{
+    width: 718px;
+    display: flex;
+    justify-content: space-between;
+}
+.playlistcontainer article{
+    width: 280px;
+    padding: 18px 0px 0px 30px;
+}
+.playlistcontainer h2{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.playlistcontainer li{
+    margin-bottom: 8px;
+}
+.playlistcontainer a{
+    color: #000000;
+}
+.playsound{
+    width: 260px;
+    height: 65px;
+    margin: 46px auto;
+    background-image: url(../img/sound.png);
+    background-repeat: repeat-x;
+    background-size: 25%;
+}
+.playlistcontainer article:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.playsecond{
+    width: 100%;
+}
+.thanks{
+    font-size: 36px;
+    text-align: center;
+}
+footer{
+    background-color: #000000;
+    padding: 26px;
+    text-align: center;
+}
+.footerlogo{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.footerlogo img{
+    width: 100%;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer nav{
+    margin: 26px 0px;
+}
+footer p{
+    color: #ffffff;
+}
+
